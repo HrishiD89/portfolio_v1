@@ -73,7 +73,7 @@ const Home = () => {
           {/* my photo */}
           <div className=" justify-center flex flex-1 rounded-2xl overflow-hidden lg:h-screen ">
             <img
-              className=" w-80 h-80 sm:w-full  rounded-2xl sm:h-full object-cover "
+              className=" h-80 w-full  rounded-2xl sm:h-full object-cover "
               src="IMG-20230924-WA0084.jpg"
               alt="my img"
             />
