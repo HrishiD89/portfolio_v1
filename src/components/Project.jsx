@@ -38,7 +38,7 @@ const Project = ({ title, image, description, demourl, customStyle, githubLink, 
             className="flex text-black items-center gap-4 flex-shrink-0 w-fit hover:bg-gray-200 bg-white px-4 py-2 rounded-full animate-bounce"
           >
             <ArrowUpRight />
-            <p className="text-xl">Demo</p>
+            <p className="text-xl">Live</p>
           </a>
         </div>
         <a href={image} className="rounded-md overflow-hidden object-cover max-w-2xl w-full sm:h-[427px]">

@@ -3,6 +3,7 @@ import ContactMe from "../components/ContactMe";
 import LinkedinIcon from "../ui/icons/LinkedinIcon";
 import GitHubIcon from "../ui/icons/GitHubIcon";
 import TwitterIcon from "../ui/icons/TwitterIcon";
+import { Bounce, ToastContainer } from "react-toastify";
 
 const Home = () => {
   return (
@@ -82,6 +83,19 @@ const Home = () => {
       </section>
       <WorkContainer />
       <ContactMe />
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Bounce}
+      />
     </div>
   );
 };
