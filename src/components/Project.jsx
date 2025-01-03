@@ -41,11 +41,11 @@ const Project = ({ title, image, description, demourl, customStyle, githubLink, 
             <p className="text-xl">Demo</p>
           </a>
         </div>
-        <a href={image} className="rounded-md overflow-hidden object-cover">
-          <img src={image} alt={`${title} image`} />
+        <a href={image} className="rounded-md overflow-hidden object-cover max-w-2xl w-full sm:h-[427px]">
+          <img src={image} alt={`${title} image`} className="w-full h-full" />
         </a>
         <div className="py-6">
-          <ul className="sm:flex gap-4 flex-wrap">
+          <ul className="flex gap-4 flex-wrap ">
             {tech.split(",").map((item, index) => (
               <li
                 key={index}

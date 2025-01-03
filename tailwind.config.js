@@ -8,6 +8,7 @@ export default {
     extend: {
       backgroundImage: {
         'about-me': "url('/IMG-20230924-WA0084.jpg')",
+        'my-icon': "url('/my-icon.png')",
       }
     },
   },

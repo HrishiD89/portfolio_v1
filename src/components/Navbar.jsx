@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav className="w-full sticky top-0  z-[99] bg-white transition-all">
       <div className="flex justify-between px-6 py-6 ">
         <span className="flex gap-4 justify-center items-center">
-          <span className="w-5 h-5 bg-yellow-400 rounded-full"></span>
+          <span className="bg-my-icon bg-cover bg-center w-7 h-7 bg-yellow-400 rounded-full"></span>
           <p className="">Hrishikesh Kalita</p>
         </span>
 
