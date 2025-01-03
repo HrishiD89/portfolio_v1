@@ -1,7 +1,6 @@
 import { useState } from "react";
-import MenuIcon from "../ui/icons/menuIcon";
+import MenuIcon from "../ui/icons/MenuIcon";
 import CloseIcon from "../ui/icons/CloseIcon";
-
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -14,11 +13,31 @@ export default function Navbar() {
           <p className="">Hrishikesh Kalita</p>
         </span>
 
-        <ul className="sm:flex gap-4 hidden"> 
-          <a className="" href="#home">Home</a>
-          <a className="" href="#about">About me </a>
-          <a className="" href="#work">Work</a>
-          <a className=" transition-all dura" href="#contact">Contact</a>
+        <ul className="sm:flex gap-4 hidden transition">
+          <a
+            className="hover:border-b-4 border-b-4 border-white hover:border-b-yellow-500"
+            href="#home"
+          >
+            Home
+          </a>
+          <a
+            className="hover:border-b-4 border-b-4 border-white hover:border-b-yellow-500"
+            href="#about"
+          >
+            About me{" "}
+          </a>
+          <a
+            className="hover:border-b-4 border-b-4 border-white hover:border-b-yellow-500"
+            href="#work"
+          >
+            Work
+          </a>
+          <a
+            className="hover:border-b-4 border-b-4 border-white hover:border-b-yellow-500"
+            href="#contact"
+          >
+            Contact
+          </a>
         </ul>
 
         {!open ? (

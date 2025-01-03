@@ -10,21 +10,20 @@ const Project = ({
   customStyle,
   githubLink,
 }) => {
-
   return (
     <>
       <div
-        className={`bg-[#6558aa] flex-1 h-full   items-center sm:items-start rounded-xl p-6 sm:h-screen ${customStyle} relative flex flex-col w-full h-full`}
+        className={`bg-[#6558aa] flex-1 h-full   items-center sm:items-start rounded-xl p-6  ${customStyle} relative flex flex-col w-full h-full`}
       >
         <div className="flex flex-col mb-6 gap-6 w-full">
           <span className="flex justify-between items-center">
-          <h1 className="text-5xl">{title}</h1>
-          <a
-            href={githubLink}
-            className="flex items-center gap-4 flex-shrink-0 px-2 py-2 w-fit sm:hidden  bg-white rounded-full"
-          >
-            <GitHubIcon />
-          </a>
+            <h1 className="text-5xl">{title}</h1>
+            <a
+              href={githubLink}
+              className="flex items-center gap-4 flex-shrink-0 px-2 py-2 w-fit sm:hidden  bg-white rounded-full"
+            >
+              <GitHubIcon />
+            </a>
           </span>
           <p className="max-w-xl">{description}</p>
         </div>
@@ -51,7 +50,6 @@ const Project = ({
             <li className="px-2 py-1 text-sm bg-green-100 rounded-full text-gray-600 ">
               # React JS
             </li>
-            
           </ul>
         </div>
       </div>

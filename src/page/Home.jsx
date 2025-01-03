@@ -10,7 +10,7 @@ const Home = () => {
       {/* main */}
       <section id="home" className="scroll-mt-[74px] ">
         <div className="flex gap-6 sm:flex-row flex-col">
-          <div className="flex flex-none sm:w-3/5 rounded-2xl sm:bg-about-me bg-cover bg-center relative overflow-hidden  sm:h-screen">
+          <div className="flex flex-none sm:w-3/5 rounded-2xl sm:bg-about-me bg-cover bg-center relative overflow-hidden  lg:h-screen">
             <div className="absolute inset-0 bg-white/10 backdrop-blur-lg rounded-2xl shadow-lg"></div>
 
             <div className="relative z-10 p-4 sm:p-12 text-green-900  sm:text-white  flex flex-col gap-6">
@@ -27,7 +27,7 @@ const Home = () => {
                 I care a lot about using design for positive impact. and enjoy
                 creating user-centric, delightful, and human experiences.
               </p>
-              <div className="flex gap-6 items-center sm:flex-row flex-col ">
+              <div className="flex gap-6 items-center sm:flex-row flex-col flex-shrink-0">
                 <span className="flex gap-4">
                   <a
                     href="#contact"
@@ -38,7 +38,7 @@ const Home = () => {
                   <a
                     target="_blank"
                     href="https://drive.google.com/file/d/1y5MaVvuA0vYlZJ4d57QFGUZPNFVVrdNa/view?usp=drive_link"
-                    className="px-4 py-2 border-2 border-yellow-400 text-yellow-400 sm:text-white rounded-full text-sm"
+                    className="px-4 py-2 border-2 border-yellow-400 text-yellow-400 sm:text-white rounded-full text-sm "
                   >
                     View CV
                   </a>
@@ -71,7 +71,7 @@ const Home = () => {
           </div>
 
           {/* my photo */}
-          <div className=" justify-center flex flex-1 rounded-2xl overflow-hidden sm:h-screen h-96">
+          <div className=" justify-center flex flex-1 rounded-2xl overflow-hidden lg:h-screen ">
             <img
               className=" w-80 h-80 sm:w-full  rounded-2xl sm:h-full object-cover "
               src="IMG-20230924-WA0084.jpg"
