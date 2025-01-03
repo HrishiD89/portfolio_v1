@@ -45,11 +45,11 @@ const Project = ({ title, image, description, demourl, customStyle, githubLink, 
           <img src={image} alt={`${title} image`} className="w-full h-full" />
         </a>
         <div className="py-6">
-          <ul className="flex gap-4 flex-wrap ">
+          <ul className="flex gap-2 text-sm flex-wrap ">
             {tech.split(",").map((item, index) => (
               <li
                 key={index}
-                className="px-2 py-1 text-sm bg-green-100 rounded-full text-gray-600"
+                className="px-2 py-1 text-sm bg-white rounded-full text-gray-600"
               >
                 #{item.trim()}
               </li>

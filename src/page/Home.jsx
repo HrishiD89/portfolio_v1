@@ -15,15 +15,15 @@ const Home = () => {
             <div className="absolute inset-0 bg-white/10 backdrop-blur-lg rounded-2xl shadow-lg"></div>
 
             <div className="relative z-10 p-4 sm:p-12 text-green-900  sm:text-white  flex flex-col gap-6">
-              <h1 className="text-3xl sm:text-start text-center w-full">
-                Hey, I&apos;am{" "}
-                <span className=" text-yellow-500 sm:inline-block w-full text-6xl py-2">
+              <div className="text-3xl sm:items-start items-center text-center w-full flex flex-col gap-3">
+                <span>Hey, I&apos;am{" "}</span>
+                <span className=" text-yellow-500 sm:inline-block w-full text-5xl text-center sm:text-start">
                   Hrishikesh{" "}
                 </span>
-                <span className="inline-block text-2xl">
-                  A Fullstack developer with 1 year of experience
+                <span className="inline-block text-2xl ">
+                  A Fullstack developer with 1 year of experience.
                 </span>
-              </h1>
+              </div>
               <p className="mt-2 text-lg max-w-xl  sm:text-left text-center">
                 I care a lot about using design for positive impact. and enjoy
                 creating user-centric, delightful, and human experiences.
