@@ -5,7 +5,7 @@ import Home from "./page/Home";
 export default function App() {
   return (
     <>
-      <Navbar /> {/* Rendered as a Component */}
+      <Navbar /> 
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

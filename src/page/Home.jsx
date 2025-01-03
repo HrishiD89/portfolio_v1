@@ -1,50 +1,77 @@
-import GitHubIcon from "@mui/icons-material/GitHub";
-import XIcon from "@mui/icons-material/X";
-import EmailIcon from "@mui/icons-material/Email";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WorkContainer from "../components/WorkContainer";
+import ContactMe from "../components/ContactMe";
+import LinkedinIcon from "../ui/icons/LinkedinIcon";
+import GitHubIcon from "../ui/icons/GitHubIcon";
+import TwitterIcon from "../ui/icons/TwitterIcon";
 
 const Home = () => {
   return (
-    <div className="px-6 w-screen flex flex-col gap-6">
-      <section id="Home" className="">
+    <div className="px-6 w-screen h-full flex flex-col gap-6 overflow-hidden transition-all">
+      {/* main */}
+      <section id="home" className="scroll-mt-[74px] ">
         <div className="flex gap-6 sm:flex-row flex-col">
-          <div className="flex   flex-1 rounded-2xl sm:bg-about-me bg-cover bg-center relative overflow-hidden  sm:h-screen">
+          <div className="flex flex-none sm:w-3/5 rounded-2xl sm:bg-about-me bg-cover bg-center relative overflow-hidden  sm:h-screen">
             <div className="absolute inset-0 bg-white/10 backdrop-blur-lg rounded-2xl shadow-lg"></div>
 
-            <div className="relative z-10 p-4 sm:p-12 text-green-900  sm:text-white  flex flex-col gap-4">
-              <h1 className=" text-2xl sm:text-left text-center sm:text-6xl font-semibold ">
-                Hey, I&apos;m{" "}
-                <span className="sm:text-green-900 text-yellow-500">
-                  Hrishikesh
+            <div className="relative z-10 p-4 sm:p-12 text-green-900  sm:text-white  flex flex-col gap-6">
+              <h1 className="text-3xl sm:text-start text-center w-full">
+                Hey, I&apos;am{" "}
+                <span className=" text-yellow-500 sm:inline-block w-full text-6xl py-2">
+                  Hrishikesh{" "}
                 </span>
-                , a Fullstack developer with 1 years of experince
+                <span className="inline-block text-2xl">
+                  A Fullstack developer with 1 year of experience
+                </span>
               </h1>
-              <p className="mt-2 text-lg max-w-xl font-thin sm:text-left text-center">
+              <p className="mt-2 text-lg max-w-xl  sm:text-left text-center">
                 I care a lot about using design for positive impact. and enjoy
                 creating user-centric, delightful, and human experiences.
               </p>
-              <div className="flex gap-4 items-center sm:flex-row flex-col ">
+              <div className="flex gap-6 items-center sm:flex-row flex-col ">
                 <span className="flex gap-4">
-                  <button className="px-4 py-2 bg-yellow-400 text-black rounded-full text-sm w-90">
+                  <a
+                    href="#contact"
+                    className="px-4 py-2 bg-yellow-400 text-black rounded-full text-sm w-90"
+                  >
                     Contact Me
-                  </button>
-                  <button className="px-4 py-2 border-2 border-yellow-400 text-yellow-400 sm:text-white rounded-full text-sm">
-                    Download CV
-                  </button>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://drive.google.com/file/d/1y5MaVvuA0vYlZJ4d57QFGUZPNFVVrdNa/view?usp=drive_link"
+                    className="px-4 py-2 border-2 border-yellow-400 text-yellow-400 sm:text-white rounded-full text-sm"
+                  >
+                    View CV
+                  </a>
                 </span>
                 <span className="flex gap-4 mt-2 sm:mt-0 h-full items-center">
-                  <EmailIcon />
-                  <GitHubIcon />
-                  <XIcon />
-                  <LinkedInIcon />
+                  <a
+                    target="_blank"
+                    href="https://github.com/HrishiD89"
+                    className="bg-white p-2 rounded-full"
+                  >
+                    <GitHubIcon />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://x.com/hrishiiiii__"
+                    className="bg-white p-2 rounded-full"
+                  >
+                    <TwitterIcon />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/hrishikesh-kalita-854000207/"
+                    className="bg-white p-2 rounded-full"
+                  >
+                    <LinkedinIcon />
+                  </a>
                 </span>
               </div>
             </div>
           </div>
 
           {/* my photo */}
-          <div className=" justify-center flex flex-none  sm:w-2/6 rounded-2xl overflow-hidden sm:h-screen h-96">
+          <div className=" justify-center flex flex-1 rounded-2xl overflow-hidden sm:h-screen h-96">
             <img
               className=" w-80 h-80 sm:w-full  rounded-2xl sm:h-full object-cover "
               src="IMG-20230924-WA0084.jpg"
@@ -55,6 +82,7 @@ const Home = () => {
         <div>{/* projects */}</div>
       </section>
       <WorkContainer />
+      <ContactMe />
     </div>
   );
 };
