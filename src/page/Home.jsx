@@ -1,9 +1,10 @@
 import WorkContainer from "../components/WorkContainer";
-import ContactMe from "../components/ContactMe";
+
 import LinkedinIcon from "../ui/icons/LinkedinIcon";
 import GitHubIcon from "../ui/icons/GitHubIcon";
 import TwitterIcon from "../ui/icons/TwitterIcon";
 import { Bounce, ToastContainer } from "react-toastify";
+import ContactMe from "../components/ContactMe";
 
 const Home = () => {
   return (
