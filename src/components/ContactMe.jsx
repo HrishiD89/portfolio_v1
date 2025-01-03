@@ -1,15 +1,14 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { serviceId, templateId, publicKey } from "../../.config";
 import { toast } from "react-toastify";
 
 const ContactMe = () => {
   const [loading, setLoading] = useState(false);
   const [sendSuccess, setSendSuccess] = useState(false);
 
-  const nameRef = useRef(null);
-  const emailRef = useRef(null);
-  const messageRef = useRef(null);
+  const nameRef = useRef("");
+  const emailRef = useRef("");
+  const messageRef = useRef("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -25,10 +24,10 @@ const ContactMe = () => {
 
     emailjs
       .send(
-        serviceId, // Replace with your EmailJS Service ID
-        templateId, // Replace with your EmailJS Template ID
+        import.meta.env.VITE_SERVICE_ID, // Use VITE_ prefixed env variables
+        import.meta.env.VITE_TEMPLATE_ID,
         templateParams,
-        publicKey // Replace with your EmailJS Public Key
+        import.meta.env.VITE_PUBLIC_KEY
       )
       .then(
         (response) => {

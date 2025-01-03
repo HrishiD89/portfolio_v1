@@ -9,7 +9,6 @@ import ContactMe from "../components/ContactMe";
 const Home = () => {
   return (
     <div className="px-6 w-screen h-full flex flex-col gap-6 overflow-hidden transition-all">
-      {/* main */}
       <section id="home" className=" w-full scroll-mt-[76px]">
         <div className="flex gap-6 sm:flex-row flex-col">
           <div className="flex flex-none sm:w-3/5 rounded-2xl sm:bg-about-me bg-cover bg-center relative overflow-hidden  lg:h-screen">
