@@ -53,11 +53,13 @@ const ContactMe = () => {
     }, 3000);
 
     return (
-      <div className="bg-green-100 max-w-4xl w-full p-6 rounded-2xl">
-        <h1 className="text-2xl sm:text-5xl text-center">
-          {" "}
-          Message sent successfully!{" "}
-        </h1>
+      <div className=" w-full flex justify-center scroll-mt-[76px]">
+        <div className="bg-green-100 max-w-4xl w-full p-6 rounded-2xl">
+          <h1 className="text-2xl sm:text-5xl text-center">
+            {" "}
+            Message sent successfully!{" "}
+          </h1>
+        </div>
       </div>
     );
   }
