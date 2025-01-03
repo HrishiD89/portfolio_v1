@@ -2,7 +2,15 @@
 import ArrowUpRight from "../ui/icons/ArrowUpRight";
 import GitHubIcon from "../ui/icons/GitHubIcon";
 
-const Project = ({ title, image, description, demourl, customStyle, githubLink, tech }) => {
+const Project = ({
+  title,
+  image,
+  description,
+  demourl,
+  customStyle,
+  githubLink,
+  tech,
+}) => {
   return (
     <>
       <div
@@ -19,6 +27,7 @@ const Project = ({ title, image, description, demourl, customStyle, githubLink, 
             >
               <GitHubIcon />
             </a>
+            
           </span>
           <p className="max-w-xl">{description}</p>
         </div>
@@ -27,7 +36,7 @@ const Project = ({ title, image, description, demourl, customStyle, githubLink, 
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="sm:flex items-center gap-4 flex-shrink-0 px-2 py-2 w-fit hidden bg-white rounded-full"
+            className="sm:flex items-center gap-4 flex-shrink-0 px-2.5 justify-center py-2 w-fit hidden bg-white rounded-full"
           >
             <GitHubIcon />
           </a>
@@ -41,7 +50,10 @@ const Project = ({ title, image, description, demourl, customStyle, githubLink, 
             <p className="text-xl">Live</p>
           </a>
         </div>
-        <a href={image} className="rounded-md overflow-hidden object-cover max-w-2xl w-full sm:h-[427px]">
+        <a
+          href={image}
+          className="rounded-md overflow-hidden object-cover max-w-2xl w-full sm:h-[427px]"
+        >
           <img src={image} alt={`${title} image`} className="w-full h-full" />
         </a>
         <div className="py-6">

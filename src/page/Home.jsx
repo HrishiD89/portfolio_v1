@@ -14,7 +14,7 @@ const Home = () => {
           <div className="flex flex-none sm:w-3/5 rounded-2xl sm:bg-about-me bg-cover bg-center relative overflow-hidden  lg:h-screen">
             <div className="absolute inset-0 bg-white/10 backdrop-blur-lg rounded-2xl shadow-lg"></div>
 
-            <div className="relative z-10 p-4 sm:p-12 text-green-900  sm:text-white  flex flex-col gap-6">
+            <div className="relative z-10 p-4   w-full  sm:p-12 text-green-900  sm:text-white  flex flex-col gap-6">
               <div className="text-3xl sm:items-start items-center text-center w-full flex flex-col gap-3">
                 <span>Hey, I&apos;am{" "}</span>
                 <span className=" text-yellow-500 sm:inline-block w-full text-5xl text-center sm:text-start">
@@ -32,7 +32,7 @@ const Home = () => {
                 <span className="flex gap-4">
                   <a
                     href="#contact"
-                    className="px-4 py-2 bg-yellow-400 text-black rounded-full text-sm w-90"
+                    className="px-4 py-2 bg-yellow-400 flex items-center justify-center text-black rounded-full text-sm w-90"
                   >
                     Contact Me
                   </a>

@@ -32,6 +32,7 @@ export default function Navbar() {
           >
             Work
           </a>
+          
           <a
             className="hover:border-b-4 border-b-4 border-white hover:border-b-yellow-500"
             href="#contact"
