@@ -1,9 +1,8 @@
-import { useState } from "react";
+/* eslint-disable react/prop-types */
 import MenuIcon from "../ui/icons/MenuIcon";
 import CloseIcon from "../ui/icons/CloseIcon";
 
-export default function Navbar() {
-  const [open, setOpen] = useState(false);
+export default function Navbar({toggleSideBar,setToggleSideBar}) {
 
   return (
     <nav className="w-full sticky top-0  z-[99] bg-white transition-all">
@@ -41,16 +40,20 @@ export default function Navbar() {
           </a>
         </ul>
 
-        {!open ? (
+        {!toggleSideBar ? (
           <span
-            onClick={() => setOpen(true)}
+            onClick={() => {
+              setToggleSideBar(prev=>!prev)
+              }}
             className="sm:hidden cursor-pointer"
           >
             <MenuIcon />
           </span>
         ) : (
           <span
-            onClick={() => setOpen(false)}
+            onClick={() => {
+              setToggleSideBar(prev=>!prev)
+              }}
             className="sm:hidden cursor-pointer"
           >
             <CloseIcon />

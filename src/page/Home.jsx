@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import WorkContainer from "../components/WorkContainer";
 
 import LinkedinIcon from "../ui/icons/LinkedinIcon";
@@ -5,10 +6,13 @@ import GitHubIcon from "../ui/icons/GitHubIcon";
 import TwitterIcon from "../ui/icons/TwitterIcon";
 import { Bounce, ToastContainer } from "react-toastify";
 import ContactMe from "../components/ContactMe";
+import SideBar from "../components/SideBar";
 
-const Home = () => {
+const Home = ({toggleSideBar,setToggleSideBar}) => {
   return (
-    <div className="px-6 w-screen h-full flex flex-col gap-6 overflow-hidden transition-all">
+    <div className="relative w-full h-full">
+      { toggleSideBar && <SideBar setToggleSideBar={setToggleSideBar} /> }
+      <div className="px-6 w-screen h-full flex flex-col gap-6 overflow-hidden transition-all">
       <section id="home" className=" w-full scroll-mt-[76px]">
         <div className="flex gap-6 sm:flex-row flex-col">
           <div className="flex flex-none sm:w-3/5 rounded-2xl sm:bg-about-me bg-cover bg-center relative overflow-hidden  lg:h-screen">
@@ -96,6 +100,7 @@ const Home = () => {
         theme="light"
         transition={Bounce}
       />
+    </div>
     </div>
   );
 };

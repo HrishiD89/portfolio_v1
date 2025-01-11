@@ -29,7 +29,7 @@ const Project = ({
             </a>
             
           </span>
-          <p className="max-w-xl">{description}</p>
+          <p className="max-w-xl text-sm sm:text-base">{description}</p>
         </div>
         <div className="flex gap-4 mb-6 flex-col sm:flex-row">
           <a
@@ -52,9 +52,9 @@ const Project = ({
         </div>
         <a
           href={image}
-          className="rounded-md overflow-hidden object-cover max-w-2xl w-full sm:h-[427px]"
+          className="rounded-md overflow-hidden object-cover max-w-2xl w-full "
         >
-          <img src={image} alt={`${title} image`} className="w-full h-full" />
+          <img src={image} alt={`${title} image`} className="w-full" />
         </a>
         <div className="py-6">
           <ul className="flex gap-2 text-sm flex-wrap ">
