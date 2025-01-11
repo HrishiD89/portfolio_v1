@@ -3,7 +3,7 @@ import { projectsData } from "../projectData";
 
 const WorkContainer = () => {
   return (
-    <section id="work" className=" w-full scroll-mt-[76px] lg-h-screen">
+    <section id="projects" className=" w-full scroll-mt-[76px] lg-h-screen">
       <div className="grid grid-cols-1 sm:grid-cols-2 w-full h-full gap-6">
         {projectsData.map((project, index) => (
           <Project

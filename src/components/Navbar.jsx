@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import MenuIcon from "../ui/icons/MenuIcon";
 import CloseIcon from "../ui/icons/CloseIcon";
+import { motion } from "motion/react";
 
-export default function Navbar({toggleSideBar,setToggleSideBar}) {
-
+export default function Navbar({ toggleSideBar, setToggleSideBar }) {
   return (
     <nav className="w-full sticky top-0  z-[99] bg-white transition-all">
       <div className="flex justify-between px-6 py-6 ">
@@ -27,11 +27,11 @@ export default function Navbar({toggleSideBar,setToggleSideBar}) {
           </a>
           <a
             className="hover:border-b-4 border-b-4 border-white hover:border-b-yellow-500"
-            href="#work"
+            href="#projects"
           >
-            Work
+            Projects
           </a>
-          
+
           <a
             className="hover:border-b-4 border-b-4 border-white hover:border-b-yellow-500"
             href="#contact"
@@ -41,23 +41,27 @@ export default function Navbar({toggleSideBar,setToggleSideBar}) {
         </ul>
 
         {!toggleSideBar ? (
-          <span
+          <motion.span
+            whileHover={{ scale: 1.5 }}
+            whileTap={{ scale: 0.9 }}
             onClick={() => {
-              setToggleSideBar(prev=>!prev)
-              }}
-            className="sm:hidden cursor-pointer"
+              setToggleSideBar((prev) => !prev);
+            }}
+            className="sm:hidden cursor-pointer "
           >
             <MenuIcon />
-          </span>
+          </motion.span>
         ) : (
-          <span
+          <motion.span
+            whileHover={{ scale: 1.5 }}
+            whileTap={{ scale: 0.9 }}
             onClick={() => {
-              setToggleSideBar(prev=>!prev)
-              }}
+              setToggleSideBar((prev) => !prev);
+            }}
             className="sm:hidden cursor-pointer"
           >
             <CloseIcon />
-          </span>
+          </motion.span>
         )}
       </div>
     </nav>

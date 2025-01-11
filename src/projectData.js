@@ -17,7 +17,7 @@ export const projectsData = [
     customStyle: "",
     githubLink: "https://github.com/HrishiD89/brainly-FullApp",
     demourl: "https://brainly-full-app.vercel.app",
-    tech: "React, Tailwind, MongoDB, Express, Nodejs",
+    tech: "React, Tailwind, MongoDB, Express",
   },
   {
     title: "Social",
@@ -26,6 +26,6 @@ export const projectsData = [
     customStyle: "bg-black text-white",
     githubLink: "https://github.com/HrishiD89/Social-links-profile",
     demourl: "https://social-links-profile-three-mu.vercel.app",
-    tech: "React, Tailwind, MongoDB, Express, Nodejs",
+    tech: "React, Tailwind",
   },
 ];

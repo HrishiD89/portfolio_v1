@@ -14,7 +14,7 @@ const Project = ({
   return (
     <>
       <div
-        className={`bg-[#6558aa] flex-1 h-full items-center sm:items-start rounded-xl p-6 ${customStyle} relative flex flex-col w-full h-full`}
+        className={`bg-[#6558aa] flex-1 h-full items-center justify-between  sm:items-start rounded-xl p-6 ${customStyle} relative flex flex-col w-full h-full`}
       >
         <div className="flex flex-col mb-6 gap-6 w-full">
           <span className="flex justify-between items-center">
@@ -31,6 +31,7 @@ const Project = ({
           </span>
           <p className="max-w-xl text-sm sm:text-base">{description}</p>
         </div>
+        <div>
         <div className="flex gap-4 mb-6 flex-col sm:flex-row">
           <a
             href={githubLink}
@@ -67,6 +68,7 @@ const Project = ({
               </li>
             ))}
           </ul>
+        </div>
         </div>
       </div>
     </>
